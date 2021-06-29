@@ -1,0 +1,39 @@
+:root {
+  --color-blue: #457b9d;
+  --color-black: #171719;
+  --color-red: #e63946;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  border: 2px solid #a8dadc;
+  border-radius: 1rem;
+  width: 70rem;
+  height: 70rem;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.container {
+  padding: 0 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+}
+
+.box.active {
+  background-color: var(--color-blue);
+}
